@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Cities</title>
+
+  //Linlk used  to accesss CSS.
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+  <h1>Favorite Cities to Visit</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">City</th>
+        <th scope="col">State</th>
+      </tr>
+    </thead>
+    // id used to change using DOM.
+    <tbody id="cityTableBody">
+      <tr>
+        <th scope="row">1</th>
+        <td>Las Vegas</td>
+        <td>Nevada</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>New Orleans</td>
+        <td>Louisiana</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Miami</td>
+        <td>Florida</td>
+      </tr>
+    </tbody>
+  </table>
+
+  //id used to change in the DOM
+  <form id="addCityForm" class="mb-3">
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="cityInput" placeholder="City" required>
+      <label for="cityInput">City</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="stateInput" placeholder="State" required>
+      <label for="stateInput">State</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  // Used to link to JavaScript file.
+  <script src="index.js"></script>
+</body>
+</html>
+
