@@ -12,8 +12,8 @@ document.getElementById("addCityForm").addEventListener('submit', event => {
   //insertRow allows a new row to be created. The () is empty because i can pass any value added through it.
     const newRow = tableBody.insertRow();
     newRow.innerHTML = `<th scope="row">${rowCount}</th><td>${city}</td><td>${state}</td>`;
-  
+  //getElementById used to target the element by the Id. Tags or classes can be used.
     document.getElementById("cityInput").value = '';
-    document.getElementById("stateInpu").value = '';
+    document.getElementById("stateInput").value = '';
   });
   
